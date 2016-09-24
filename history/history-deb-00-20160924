@@ -1,0 +1,182 @@
+    1  df 'lh 
+    2  df -lh 
+    3  sudo shutdown -h now 
+    4  clear
+    5  sudo adduser user1
+    6  id user1
+    7  sudo usermod -a -G sudo sysadmin
+    8  sudo adduser user1
+    9  sudo usermod -a -G sudo user1
+   10  id user1
+   11  sudo apt-get install git
+   12  sudo apt-get install openssh-server
+   13  git clone https://github.com/dmadriza/LXS2_diego.git
+   14  ls
+   15  pwd
+   16  touch Music
+   17  ls
+   18  ls Music
+   19  ls
+   20  pwd
+   21  ls
+   22  ls Music/ algo
+   23  ls Music/ algo > otro 2> error
+   24  cat otro
+   25  cat error
+   26  ls Music/ script > otro>> error
+   27  ls Music/ script > otro 2>> error
+   28  cat error
+   29  ls
+   30  ls Music script > otro 2>> error
+   31  ls Music script > otro 2> error
+   32  cat error
+   33  clear
+   34  ls
+   35  cd LXS2_emmanuel
+   36  cd LXS2_emmanuel/
+   37  ls
+   38  git clone https://github.com/emvarg/LXS2_emmnuel.git
+   39  git clone https://github.com/emvarg/LXS2_emmanuel.git
+   40  cd LXS2_emmanuel/
+   41  git pull origin master
+   42  ls
+   43  cd misc/
+   44  ls
+   45  pwd
+   46  cd/+
+   47  cd/
+   48  cd /
+   49  pwd
+   50  ls
+   51  cd home/
+   52  ls
+   53  pwd
+   54  ls
+   55  cd curso1/
+   56  pwd
+   57  ls
+   58  cd/
+   59  cd /
+   60  ls
+   61  pwd
+   62  cd home/
+   63  ls
+   64  cd sysad,in/
+   65  cd sysamin/
+   66  cd sysadmin/
+   67  ls
+   68  cd LXS2_diego/
+   69  ls
+   70  pwd
+   71  cd /
+   72  ls
+   73  cd home/
+   74  ls
+   75  cd sysadmin/
+   76  ls
+   77  cd LXS2_emmanuel/
+   78  tree
+   79  cd misc/
+   80  ls
+   81  cp dhcpd.conf /home/sysadmin/LXS2_diego/misc/
+   82  cd /home/sysadmin/LXS2_diego/misc/
+   83  ls
+   84  cat dhcpd.conf 
+   85  clear
+   86  pwd
+   87  ls
+   88  git status
+   89  git add dhcpd.conf
+   90  git status
+   91  mkdir clase3
+   92  ls
+   93  cd clase3/
+   94  ls
+   95  pwd
+   96  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "163." | awk -F" " '{print2} | sort > red-verde 
+
+
+   97  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "163." | awk -F" " '{print $2}' | sort > red-verde 
+   98  cd ..
+   99  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "163." | awk -F" " '{print $2}' | sort > clase3/red-verde
+  100  cd clase3/
+  101  ls
+  102  pwd
+  103  ls
+  104  rm red-verde
+  105  ls
+  106  pwd
+  107  cd ..
+  108  cat dhcpd.conf | grep -v "#" | grep "fixed" 
+  109  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "192." | awk -F" " '{print $2}' | sort > clase3/red-verde
+  110  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "10." | grep "0." | awk -F" " '{print $2}' | sort > clase3/red-roja
+  111  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "10." | grep "2." | awk -F" " '{print $2}' | sort > clase3/red-azul
+  112  cd clase3/
+  113  ls
+  114  cd red-azul/
+  115  cat red-verde
+  116  cat red-rojo
+  117  cat red-roja
+  118  cat red-azul
+  119  cat red-roja
+  120  rm red-roja 
+  121  rm red-azul
+  122  ls
+  123  cat red-verde 
+  124  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "10.0." | awk -F" " '{print $2}' | sort > clase3/red-azul
+  125  cd ..
+  126  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "10.0." | awk -F" " '{print $2}' | sort > clase3/red-azul
+  127  cat dhcpd.conf | grep -v "#" | grep "fixed" | grep "10.2." | awk -F" " '{print $2}' | sort > clase3/red-roja
+  128  ls
+  129  cd clase3/
+  130  ls
+  131  cat red-azul 
+  132  cat red-roja
+  133  cat red-verde
+  134  git status
+  135  cd ..
+  136  git status
+  137  git add clase3/
+  138  git status
+  139  cd clase3/
+  140  ls
+  141  git commit -m "Archivos con las ip completas y separadas"
+  142  git push origin master
+  143  git status
+  144  git log
+  145  git config --global user.name "Diego Madriz"
+  146  git config --global user.email "madriz.diego@gmail.com"
+  147  git log
+  148  git status
+  149  history
+  150  git log
+  151  git push origin master
+  152  git status 
+  153  git remote -v 
+  154  git pull origin master 
+  155  ls
+  156  cd ..
+  157  ls
+  158  cd 
+  159  ls
+  160  cp -r  LXS2_diego/misc/clase3/ .
+  161  ls
+  162  sudo rm -r LXS2_diego/
+  163  git clone https://github.com/dmadriza/LXS2_diego.git
+  164  ls LXS2_diego/misc/
+  165  cp -r  clase3/ LXS2_diego/misc/
+  166  cd LXS2_diego/misc/
+  167  ls
+  168  git status 
+  169  git add clase3/
+  170  git commit -m "Archivos con las ip completas y separadas"
+  171  git push origin master 
+  172  history
+  173  history > history/history-$HOSTNAME-`date +%Y%m%d`
+  174  ls
+  175  cd ..
+  176  ls
+  177  cd history/
+  178  history > history/history-$HOSTNAME-`date +%Y%m%d`
+  179  cd ..
+  180  history > history/history-$HOSTNAME-`date +%Y%m%d`
